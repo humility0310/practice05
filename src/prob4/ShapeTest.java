@@ -1,5 +1,5 @@
 package prob4;
-
+//math.sqrt함수사용
 public class ShapeTest {
 
 	public static void main(String[] args) {
@@ -14,7 +14,12 @@ public class ShapeTest {
 			System.out.println( "perimeter: " + shape.getPerimeter() );
 			
 			if( shape instanceof Resizable ) {
-				((Resizable)shape).resize( 0.5 );
+				
+				Resizable resizable =(Resizable)shape;
+				resizable.resize(0.5);
+				
+				//((Resizable)shape).resize( 0.5 );
+
 				System.out.println( "new area: " + shape.getArea() );
 				System.out.println( "new perimeter: " + shape.getPerimeter() );
 			}
